@@ -33,9 +33,9 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
 	rating_array = rating_list.tr('"','').split(',')
 	rating_array.each do |rating|
 		if uncheck == 'un'
-			step %Q{I uncheck "#{rating}"}
-		else
 			step %Q{I check "#{rating}"}
+		else
+			step %Q{I uncheck "#{rating}"}
 		end
 	end
 end

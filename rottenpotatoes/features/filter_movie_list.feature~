@@ -26,8 +26,7 @@ Scenario: all ratings selected
   # see assignment
 	When I check the following ratings: "ratings_G,ratings_PG-13,ratings_PG,ratings_R,ratings_NC-17"
 	And I press "ratings_submit"
-	Then I should see "The Terminator"
-	And I should see all the movies
+	Then I should see all the movies
 
 Scenario: restrict to movies with 'PG' or 'R' ratings
   # enter step(s) to check the 'PG' and 'R' checkboxes
